@@ -1,0 +1,9 @@
+{
+  "name": "01_Testing_with_viTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^3.0.5"
+  }
+}
