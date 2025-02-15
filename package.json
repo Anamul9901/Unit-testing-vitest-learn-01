@@ -1,7 +1,10 @@
 {
-  "name": "01_Testing_with_viTest",
+  "name": "01_testing_with_vitest",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "vitest --reporter verbose --run"
+  },
   "license": "MIT",
   "devDependencies": {
     "vitest": "^3.0.5"
