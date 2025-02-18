@@ -28,7 +28,7 @@ it("it should provide NaN if at least one invalid number is probided", () => {
   expect(result).toBeNaN();
 });
 
-// 2nd test
+// 3nd test
 it("it should provide correct sum if an array numeric string is provided", () => {
   // Arrange
   const numbers = [1, "2", "3"];
@@ -39,4 +39,31 @@ it("it should provide correct sum if an array numeric string is provided", () =>
 
   //Assertion
   expect(result).toBe(expectedResult);
+});
+
+// 4.1 test
+it("it(4.1 test) should throw an error if no argument is passed", () => {
+  try {
+    add();
+  } catch (err) {
+    // add function e konu argument na pathale ai error ta define krbe.
+    expect(err).toBeDefined();
+  }
+});
+
+// 4.2 test // same work to 4.1
+it("it(4.2 test) should throw an error if no argument is passed", () => {
+  const resultFn = () => {
+    add();
+  };
+  expect(resultFn).toThrow();
+});
+
+// 5 test
+it("it should throw an error if multiple argument is provided", () => {
+  const resultFn = () => {
+    add(1, 2, 3);
+  };
+
+  expect(resultFn).toThrow(/is not iterable/i);
 });
