@@ -31,6 +31,6 @@ it("should encrypt the message correctly", async () => {
   const decryptedData = CryptoJS.AES.decrypt(encryptedData, secretKey).toString(
     CryptoJS.enc.Utf8
   );
-//   console.log("decryptedData-2:", decryptedData);
+  //   console.log("decryptedData-2:", decryptedData);
   expect(decryptedData).toBe(message);
 });
