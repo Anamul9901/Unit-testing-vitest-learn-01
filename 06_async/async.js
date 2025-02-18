@@ -28,8 +28,8 @@ const secretKey = "secret_key_1141";
 // encryptMessage(JSON.stringify(message), secretKey, (encryptedMessage) => {
 //   console.log(encryptedMessage);
 
-//   //   const decryptedMessage = CryptoJS.AES.decrypt(encryptedMessage, secretKey);
-//   //   console.log("de-", decryptedMessage.toString(CryptoJS.enc.utf8));
+//     const decryptedMessage = CryptoJS.AES.decrypt(encryptedMessage, secretKey);
+//     console.log("de-", decryptedMessage.toString(CryptoJS.enc.Utf8));
 // });
 
 // encryptMessagepromise(JSON.stringify(message), secretKey).then(
